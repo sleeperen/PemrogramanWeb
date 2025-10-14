@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4A4A4A;
+}
+
+body > h1,
+body > fieldset {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    width: 540px !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2C5E62;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2C5E62;
+    padding: 0 10px;
+    margin-left: -10px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+fieldset > p {
+    padding-top: 15px;
+}
+
+fieldset ~ p {
+    width: 540px !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+fieldset + p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+fieldset + p ~ p:not(fieldset ~ fieldset ~ p) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+p:has(input[type="radio"]) {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 1em;
+    color: #4A4A4A;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #2C5E62;
+    outline: none;
+    box-shadow: 0 0 6px rgba(44, 94, 98, 0.6);
+}
+
+p:has(input[type="submit"]) {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px 0 0 0;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #2C5E62;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #214446;
+    transform: scale(1.02);
+}
